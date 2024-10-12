@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(18, 18, 18); */
+        }
+        .outerCont{
+            height: 100vh;
+            width: 100%;
+        }
+        .headerCont{
+            height: 20vh;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        .cardsCont{
+            height: 80vh;
+            background-color:rgb(131, 130, 130);
+        }
+        .searchCont{
+            height: 50%;
+            background-color: rgb(210, 211, 212);
+            width: 100%;
+           display: flex;
+           align-items: center;
+        }
+        #Inp{
+            width: 300px;
+            height: 30px;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #searchBtn{
+            height: 30px;
+            width: 50px;
+            border: none;
+            outline: none;
+        }
+        .inputDiv{
+            height: 20px;
+            width: 370px;
+            background: rgb(255, 255, 255);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerCont">
+        <div class="headerCont">
+            <div class="searchCont">
+                <img src="" alt="youtubeIcon">
+                <div class="inputDiv">
+                    <input type="text" name="" id="Inp">
+                    <button id="searchBtn">🍉</button>
+                </div>
+            </div>
+            <div class="historySearchBars"></div>
+        </div>
+
+        <div class="cardsCont">
+            <div class="sideBarCont"></div>
+            <div class="cardCont"></div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

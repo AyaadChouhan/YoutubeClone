@@ -1,81 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="index.css"> -->
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            /* background-color: rgb(18, 18, 18); */
-        }
-        .outerCont{
-            height: 100vh;
-            width: 100%;
-        }
-        .headerCont{
-            height: 20vh;
-            width: 100%;
-            background-color: rgb(255, 255, 255);
-        }
-        .cardsCont{
-            height: 80vh;
-            background-color:rgb(131, 130, 130);
-        }
-        .searchCont{
-            height: 50%;
-            background-color: rgb(210, 211, 212);
-            width: 100%;
-           display: flex;
-           align-items: center;
-        }
-        #Inp{
-            width: 300px;
-            height: 30px;
-            border: none;
-            outline: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #searchBtn{
-            height: 30px;
-            width: 50px;
-            border: none;
-            outline: none;
-        }
-        .inputDiv{
-            height: 20px;
-            width: 370px;
-            background: rgb(255, 255, 255);
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div class="outerCont">
-        <div class="headerCont">
-            <div class="searchCont">
-                <img src="" alt="youtubeIcon">
-                <div class="inputDiv">
-                    <input type="text" name="" id="Inp">
-                    <button id="searchBtn">🍉</button>
-                </div>
-            </div>
-            <div class="historySearchBars"></div>
-        </div>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .outerCont {
+        height: 100vh;
+        width: 100%;
+      }
+      .headerCont {
+        margin: 0;
+        padding: 0;
+        height: 20vh;
+        width: 100%;
+        background-color: rgb(35, 35, 35);
+      }
+      .cardsCont {
+        height: 80vh;
+        background-color: rgb(131, 130, 130);
+      }
+      .searchCont {
+        height: 50%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+      }
+      #Inp {
+        width: 90%;
+        height: 50px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 10px;
+        background-color: black;
+        color: rgb(163, 163, 163);
+      }
+      #searchBtn {
+        height: 50px;
+        width: 100px;
+        padding: 10px auto;
+        border: none;
+        outline: none;
+        font-size: 23px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(163, 163, 163);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .inputDiv {
+        height: 30px;
+        width: 500px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+      #youtubeIcon {
+        height: 80px;
+        align-items: center;
+        margin-left: 20px;
+      }
 
-        <div class="cardsCont">
-            <div class="sideBarCont"></div>
-            <div class="cardCont"></div>
+      .mainCont {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      .sideBarCont {
+        background-color: rgb(35, 35, 35);
+        height: 100%;
+      }
+      .cardCont {
+        background-color: rgb(35, 35, 35);
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+      }
+      .firstCard{
+        height: 250px;
+        width: 400px;
+        background-color: aquamarine;
+        text-align: center;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outerCont">
+      <div class="headerCont">
+        <div class="searchCont">
+          <img
+            src="./1441800841_youtube_128_47037.png"
+            alt="youtubeIcon"
+            id="youtubeIcon"
+          />
+          <div class="inputDiv">
+            <input type="text" id="Inp" placeholder="Search" />
+            <button id="searchBtn">search</button>
+          </div>
         </div>
+        <div class="historySearchBars"></div>
+      </div>
+
+      <div class="mainCont">
+        <div class="sideBarCont">
+          <h1>chouhan</h1>
+        </div>
+        <div class="cardCont">
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+           <div class="firstCard"><h1>ayaad</h1></div>
+        </div>
+      </div>
     </div>
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>

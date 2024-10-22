@@ -1,2 +1,2 @@
 const myName: string = 'ayaad';
-console.log(myName)
+document.write(myName) 
